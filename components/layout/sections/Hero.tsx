@@ -1,11 +1,10 @@
 import Image from "next/image";
+import CTA from "./CTA";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-36 pb-40">
-      {/* Background */}
       <div className="absolute inset-0 -z-10">
-        {/* Global bottom glow */}
         <div className="absolute bottom-[-30%] left-1/2 h-150 w-150 -translate-x-1/2 rounded-full bg-purple-600/40 blur-[160px]" />
 
         {/* Dark overlay */}
@@ -13,7 +12,7 @@ export default function Hero() {
       </div>
 
       <div className="mx-auto max-w-5xl px-6 text-center">
-        {/* Badge */}
+        
         <div className="mb-10 inline-flex items-center gap-2 rounded-full border border-purple-500/30 bg-black/60 px-4 py-2 text-xs text-purple-200 shadow-[0_0_20px_rgba(140,69,255,0.35)] backdrop-blur">
           <span className="rounded-full bg-purple-600 px-2 py-0.5 text-[10px] font-semibold text-black">
             NEW
@@ -32,7 +31,7 @@ export default function Hero() {
           <div className="absolute left-[-25%] top-1/2 h-70 w-70 -translate-y-1/2 rounded-full bg-purple-600/25 blur-[160px]" />
           <div className="absolute right-[-25%] top-1/2 h-70 w-70 -translate-y-1/2 rounded-full bg-purple-600/25 blur-[160px]" />
 
-          {/* Heading image with bottom fade */}
+          {/* Heading image */}
           <Image
             src="/heading.png"
             alt="Boost your rankings with AI"
@@ -46,7 +45,7 @@ export default function Hero() {
           />
         </div>
 
-        {/* App image with top fade */}
+        {/* App image */}
         <div className="relative mx-auto -mt-30 max-w-5xl">
           <Image
             src="/app-mark.png"
@@ -60,6 +59,7 @@ export default function Hero() {
             "
           />
         </div>
+        
         <div className="-mt-5">
             <Image
             src="/companies.png"
@@ -101,9 +101,57 @@ export default function Hero() {
             "
           />
         </div>
-     
-      </div>
 
+        <section className="relative w-full overflow-hidden">
+          {/* Mobile image  */}
+          <Image
+            src="/pricing-mobile.png"
+            alt="Pricing (mobile)"
+            width={750}
+            height={1200}
+            priority
+            className="
+          block sm:hidden
+          w-full h-auto
+          mask-[linear-gradient(to_top,black_95%,transparent_100%)]
+        "
+          />
+
+          {/* Desktop image  */}
+          <div className="mx-auto hidden max-w-6xl px-6 sm:block">
+            <Image
+              src="/pricing.png"
+              alt="Pricing (desktop)"
+              width={1200}
+              height={600}
+              priority
+              className="
+            mx-auto w-full h-auto
+            mask-[linear-gradient(to_top,black_95%,transparent_100%)]
+          "
+            />
+          </div>
+        </section>
+
+        <div>
+          <CTA />
+        </div>
+
+        <div>
+          <Image
+            src="/footer.png"
+            alt="company"
+            width={1200}
+            height={600}
+            priority
+            className="
+      relative mx-auto w-full h-auto
+      mask-[radial-gradient(ellipse_at_center,black_60%,transparent_100%)]
+    "
+          />
+        </div>
+
+      </div>
       
     </section>
   );

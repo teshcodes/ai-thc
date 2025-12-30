@@ -11,16 +11,16 @@ export default function Header() {
                 <div className="mt-4 flex h-14 items-center justify-between">
 
                     {/* Logo */}
-                    <div className="flex items-center gap-2">
+                    <div className="flex shrink-0 items-center gap-2">
                         <Image
                             src="/logo.png"
                             alt="Logo"
                             width={40}
                             height={40}
                             priority
+                            className="block"
                         />
                     </div>
-
 
                     {/* Navigation */}
                     <nav className="hidden md:flex items-center gap-6 text-sm text-white/80 rounded-full border border-white/10 bg-black/40 backdrop-blur-md py-4 px-10">
