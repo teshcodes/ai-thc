@@ -1,0 +1,16 @@
+[33m65b7259[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD
+[33m65b7259[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{1}: reset: moving to HEAD~3
+[33m0ae0ccf[m HEAD@{2}: reset: moving to HEAD~2
+[33m82cf25e[m HEAD@{3}: commit: Remove secret from code
+[33m51ccf45[m HEAD@{4}: reset: moving to HEAD~1
+[33m9cbe422[m HEAD@{5}: commit: Remove secret from code
+[33m51ccf45[m HEAD@{6}: reset: moving to HEAD~1
+[33md473605[m HEAD@{7}: commit: Remove secret from code
+[33m51ccf45[m HEAD@{8}: reset: moving to HEAD~1
+[33mad0409f[m HEAD@{9}: commit: Initial project setup
+[33m51ccf45[m HEAD@{10}: commit: Debugging
+[33m0ae0ccf[m HEAD@{11}: commit: Successfully built a project with NextJs
+[33mfde7244[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{12}: Branch: renamed refs/heads/main3 to refs/heads/main
+[33mfde7244[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{14}: commit: Halfway done with the whole design
+[33m5b0f14e[m HEAD@{15}: commit: Top navigators implemented
+[33m65b7259[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{16}: commit (initial): Initial commit from Create Next App
