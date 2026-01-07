@@ -60,7 +60,7 @@ export default function Hero() {
           />
         </div>
         
-        <div className="-mt-5">
+        <div className="-mt-4">
             <Image
             src="/companies.png"
             alt="company"
