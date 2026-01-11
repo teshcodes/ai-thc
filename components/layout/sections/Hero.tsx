@@ -1,9 +1,10 @@
 import Image from "next/image";
 import CTA from "./CTA";
+import Footer from "./Footer";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-36 pb-40">
+    <section className="relative overflow-hidden pt-16 pb-40">
       <div className="absolute inset-0 -z-10">
         <div className="absolute bottom-[-30%] left-1/2 h-150 w-150 -translate-x-1/2 rounded-full bg-purple-600/40 blur-[160px]" />
 
@@ -138,17 +139,7 @@ export default function Hero() {
         </div>
 
         <div>
-          <Image
-            src="/footer.png"
-            alt="company"
-            width={1200}
-            height={600}
-            priority
-            className="
-      relative mx-auto w-full h-auto
-      mask-[radial-gradient(ellipse_at_center,black_60%,transparent_100%)]
-    "
-          />
+          <Footer />
         </div>
 
       </div>
