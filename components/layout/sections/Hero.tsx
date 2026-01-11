@@ -23,12 +23,9 @@ export default function Hero() {
           </span>
         </div>
 
-        {/* Heading image + glows */}
         <div className="relative mx-auto max-w-4xl">
-          {/* Center glow */}
           <div className="absolute -bottom-16 left-1/2 h-65 w-[85%] -translate-x-1/2 rounded-full " />
 
-          {/* Side glows */}
           <div className="absolute left-[-25%] top-1/2 h-70 w-70 -translate-y-1/2 rounded-full bg-purple-600/25 blur-[160px]" />
           <div className="absolute right-[-25%] top-1/2 h-70 w-70 -translate-y-1/2 rounded-full bg-purple-600/25 blur-[160px]" />
 
@@ -47,7 +44,8 @@ export default function Hero() {
         </div>
 
         {/* App image */}
-        <div className="relative mx-auto -mt-30 max-w-5xl">
+        <div className="relative mx-auto max-w-5xl
+         -translate-y-24 sm:-translate-y-16 md:-translate-y-53">
           <Image
             src="/app-mark.png"
             alt="App preview"
@@ -55,27 +53,95 @@ export default function Hero() {
             height={600}
             priority
             className="
-              relative mx-auto w-full h-auto
-              mask-[linear-gradient(to_top,black_70%,transparent_100%)]
-            "
+      relative mx-auto w-full h-auto
+      mask-[linear-gradient(to_top,black_70%,transparent_100%)]
+    "
           />
         </div>
-        
-        <div className="-mt-4">
-            <Image
+
+        <div className="relative mx-auto -mt-18 sm:-mt-16 md:-mt-44 lg:-mt-40">
+          <Image
             src="/companies.png"
             alt="company"
             width={1200}
             height={600}
             priority
             className="
-              relative mx-auto w-full h-auto
-              mask-[linear-gradient(to_top,black_70%,transparent_100%)]
-            "
+      relative mx-auto w-full h-auto
+      mask-[linear-gradient(to_top,black_70%,transparent_100%)]
+    "
           />
         </div>
 
-        <div className="">
+        <div
+          className="
+            mx-auto mt-10 max-w-5xl
+            px-6 md:px-17
+            text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+            leading-snug text-center
+          "
+        >
+          Harness the power of AI, making search engine optimization intuitive and effective
+          for all skill levels.
+        </div>
+
+        {/* Desktop bento */}
+        <div className="hidden md:block">
+          <div className="mt-5">
+            <Image
+              src="/bento1.png"
+              alt="Bento"
+              width={1200}
+              height={600}
+              priority
+              className="
+        relative mx-auto w-full h-auto
+        mask-[linear-gradient(to_top,black_95%,transparent_100%)]
+      "
+            />
+          </div>
+
+          <div className="mt-5">
+            <Image
+              src="/bento2.png"
+              alt="Bento"
+              width={1200}
+              height={600}
+              priority
+              className="
+        relative mx-auto w-full h-auto
+        mask-[linear-gradient(to_top,black_95%,transparent_100%)]
+      "
+            />
+          </div>
+        </div>
+
+        {/* Mobile bento */}
+        <div className="mt-10 space-y-6 md:hidden">
+          <div className="overflow-hidden rounded-2xl">
+            <Image
+              src="/bento1-mobile.png"
+              alt="Bento mobile"
+              width={800}
+              height={800}
+              priority
+              className="w-full h-auto"
+            />
+          </div>
+
+          <div className="overflow-hidden rounded-2xl">
+            <Image
+              src="/bento2-mobile.png"
+              alt="Bento mobile"
+              width={800}
+              height={800}
+              priority
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+
+        <div className="mt-10">
             <Image
             src="/features.png"
             alt="Features"
